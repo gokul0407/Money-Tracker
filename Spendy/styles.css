@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Slabo 13px", serif;
+}
+
+body {
+    width: 100vw;
+    background-image: url("C:\\Users\\gokul\\OneDrive\\Desktop\\Spendy\\Images\\ChatGPT Image Sep 17, 2026, 03_53_16 PM.png");
+    background-size: cover;
+    background-position: center;
+    place-items: center;
+    /*height: 100vh;
+    display: grid; */
+}
+
+
+/* TOP SPENDY */
+
+.spendy {
+    text-align: center;
+    color: #123b5d;
+    font-family: "Alata", cursive;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+
+
+
+/* TOP TRACK • SAVE • GROW */
+
+.spendy-subtitle {
+    text-align: center;
+    color: #123b5d;
+    font-family: "Caveat Brush", cursive;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /*margin-top: -5px; */
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+     background-image:
+        linear-gradient(
+            rgba(93, 203, 239, 0.80),
+            rgba(167, 224, 242, 0.80)
+        ),
+        url("https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=900&q=80");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    overflow: hidden;
+}
+
+.ledger {
+    background-color: #314c63;
+    padding: 20px;
+    flex: 1;
+    color: #000;
+}
+
+.ledger h2 {
+    text-transform: uppercase;
+    color: #f5baba;
+}
+
+.ledger h2,
+.ledger h4,
+.ledger h1 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.inc-exp-container {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.inc-exp-container div {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 18px;
+    flex: 1;
+    border-radius: 2px;
+}
+
+.inc-exp-container div p {
+    font-size: 22px;
+}
+
+.inc-exp-container div.inc {
+    color: #e180f4;
+    border: 3px solid #e180f4;
+}
+
+.inc-exp-container div.exp {
+    color: #e74c3c;
+    border: 3px solid #e74c3c;
+}
+
+#form {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #378ef1;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn {
+    background-color: #378ef1;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.transaction {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.transaction h3 {
+    text-transform: uppercase;
+    color: #a50b0b;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a50b0b;
+    margin-bottom: 10px;
+}
+
+.trans {
+    list-style: none;
+}
+
+.trans li {
+    background-color: #ebe6e6;
+    color: #000;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.trans li.inc {
+    border-right: 5px solid #e180f4;
+}
+
+.trans li.exp {
+    border-right: 5px solid #e74c3c
+}
+
+.delete-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000a0c;
+    font-weight: 600;
+    color: #4cd5e7;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.trans li:hover .delete-btn {
+    opacity: 1;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
