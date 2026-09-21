@@ -2,7 +2,7 @@
     "name": "Spendy",
     "short_name": "Spendy",
     "description": "Track, Save and Grow your money",
-    "start_url": "./Index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#123b5d",

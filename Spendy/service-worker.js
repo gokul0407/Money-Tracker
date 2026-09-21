@@ -2,7 +2,7 @@ const CACHE_NAME = "spendy-v1";
 
 const ASSETS = [
     "./",
-    "./Index.html",
+    "./index.html",
     "./styles.css",
     "./scripts.js",
     "./manifest.json",
